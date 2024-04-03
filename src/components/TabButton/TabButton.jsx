@@ -1,13 +1,9 @@
 import React from "react";
 
-export const TabButton = ({ children }) => {
-  const handelOnClick = () => {
-    console.log("hello world");
-  };
-
+export const TabButton = ({ children, onSelect }) => {
   return (
     <li>
-      <button onClick={handelOnClick}>{children}</button>
+      <button onClick={onSelect}>{children}</button>
     </li>
   );
 };
